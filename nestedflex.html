@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Flexbox Practice</title>
+    <style>
+        .container1 {
+            display: flex;
+            flex-direction: row;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+
+        .container2 {
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+
+        .row2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .container3 {
+            border-style: solid;
+            border-radius: 2px;
+            box-shadow: 0 0 3px gray;
+            border-color: beige;
+            padding-top: 10px;
+            width: 380px;
+        }
+
+        .email {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .email-content {
+            flex: 1;
+        }
+
+        .email-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div style="background-color: pink;
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;">
+            <div style="background-color: black; color: white;">
+                item1
+            </div>
+        </div>
+        <div style="background-color: lightblue;
+        width: 200px;"></div>
+    </div>
+
+    <div class="container2">
+        <div style="background-color: pink; width: 100px;"></div>
+        <div style="background-color: lightblue; width: 200px;">
+            <div>row1</div>
+            <div class="row2">
+                <div style="background-color: black; color: white;">row2</div>
+                <div style="background-color: black; color: white;">row2</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container3">
+        <p style="margin-left: 10px;
+        margin-bottom: 10px;">ALL INBOXES</p>
+        <div class="email">
+            <div>
+                <img class="sender-picture" src="Youtube/channel-pictures/channel-4.jpeg" style="width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                margin-right: 10px;
+                margin-left: 10px;">
+            </div>
+            <div class="email-content">
+                <div class="email-header">
+                    <p style="font-weight: bold;">Chewy Promotions</p>
+                    <p>4:58 PM</p>
+                </div>
+                <p style="font-weight: bold;">Biggest sales of the year!</p>
+                <p>Hi there! We're writing to tell you about our...</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
