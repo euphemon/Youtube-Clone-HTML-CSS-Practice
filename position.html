@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Practice</title>
+</head>
+
+<body style="height: 3000px;
+padding-top: 60px;
+padding-left: 70px;">
+    <div style="
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    height: 50px; /*bottom will be resized, use height for nonresize*/
+    left: 0;
+    right: 0;
+    z-index: 1;">header</div>
+
+    <div style="
+    background-color: lightcoral;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 50px;
+    width: 70px;">
+        sidebar
+        <div style="position: absolute;
+        background-color: red;
+        color: white;
+        top: 0;
+        right: 0;
+        z-index: 2;">X</div>
+    </div>
+
+    <div style="position: absolute;
+    background-color: red;
+    color: white;
+    right: 60px;
+    top: 60px;
+    z-index: 2;">absolute</div>
+
+    <div style="background-color: pink; width: 200px; height: 200px;
+    position: relative;
+    ">div 1
+        <div style="position: absolute;
+        background-color: black;
+        color: white;
+        right: 10px;
+        bottom: 10px;
+        z-index: 2;">5:00</div>
+    </div>
+    <div style="background-color: lightblue; width: 200px; height: 200px;">div 2</div>
+
+    <div style="position: fixed;
+    background-color: black;
+    color: white;
+    bottom: 20px;
+    right: 20px;">bottom-right</div>
+
+    <div style="position: fixed;
+    background-color: green;
+    color: white;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100px;">right sidebar</div>
+
+</body>
+
+</html>
