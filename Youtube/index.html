@@ -17,11 +17,12 @@
 </head>
 
 <body>
-    <div class="header">
+    <header class="header">
         <div class="left-section">
             <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="">
             <img class="youtube-logo" src="icons/youtube-logo.svg" alt="">
         </div>
+        <!--Put position absolute inside position relative for tooltip-->
         <div class="middle-section">
             <input class="search-bar" type="text" placeholder="Search">
             <button class="search-button">
@@ -52,9 +53,9 @@
                 <div class="tooltip">Channel</div>
             </div>
         </div>
-    </div>
+    </header>
 
-    <div class="sidebar">
+    <nav class="sidebar">
         <div class="sidebar-link">
             <img src="icons/home.svg" alt="">
             <div>Home</div>
@@ -79,122 +80,123 @@
             <img src="icons/library.svg" alt="">
             <div>Library</div>
         </div>
-    </div>
+    </nav>
 
-    <div class="video-grid">
-
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="images/thumbnail1.jpg" alt="thumbnail1">
-                <div class="video-time">15:40</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="images/thumbnail1.jpg" alt="profile">
+    <main>
+        <section class="video-grid">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnail1.jpg" alt="thumbnail1">
+                    <div class="video-time">15:40</div>
                 </div>
-                <div class="video-info">
-                    <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-                    <p class="video-author">Marques Brownlee</p>
-                    <p class="video-stats">3.4M views &#183 6 months ago</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="images/thumbnail1.jpg" alt="thumbnail1">
-                <div class="video-time">14:20</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="images/thumbnail1.jpg" alt="profile">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">Try Not To Laugh Challenge #9</p>
-                    <p class="video-author">Markpilier</p>
-                    <p class="video-stats">19M views · 4 years ago
-
-                    </p>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/thumbnail1.jpg" alt="profile">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                        <p class="video-author">Marques Brownlee</p>
+                        <p class="video-stats">3.4M views &#183 6 months ago</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="images/thumbnail1.jpg" alt="thumbnail1">
-                <div class="video-time">08:17</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="images/thumbnail1.jpg" alt="profile">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnail1.jpg" alt="thumbnail1">
+                    <div class="video-time">14:20</div>
                 </div>
-                <div class="video-info">
-                    <p class="video-title">Try Not To Laugh Challenge #9</p>
-                    <p class="video-author">Markpilier</p>
-                    <p class="video-stats">19M views · 4 years ago
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/thumbnail1.jpg" alt="profile">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Try Not To Laugh Challenge #9</p>
+                        <p class="video-author">Markpilier</p>
+                        <p class="video-stats">19M views · 4 years ago
 
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="images/thumbnail1.jpg" alt="thumbnail1">
-                <div class="video-time">12:11</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="images/thumbnail1.jpg" alt="profile">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">Try Not To Laugh Challenge #9</p>
-                    <p class="video-author">Markpilier</p>
-                    <p class="video-stats">19M views · 4 years ago
-
-                    </p>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="images/thumbnail1.jpg" alt="thumbnail1">
-                <div class="video-time">09:12</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="images/thumbnail1.jpg" alt="profile">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnail1.jpg" alt="thumbnail1">
+                    <div class="video-time">08:17</div>
                 </div>
-                <div class="video-info">
-                    <p class="video-title">Try Not To Laugh Challenge #9</p>
-                    <p class="video-author">Markpilier</p>
-                    <p class="video-stats">19M views · 4 years ago
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/thumbnail1.jpg" alt="profile">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Try Not To Laugh Challenge #9</p>
+                        <p class="video-author">Markpilier</p>
+                        <p class="video-stats">49M views · 2 years ago
 
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="images/thumbnail1.jpg" alt="thumbnail1">
-                <div class="video-time">03:23</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="images/thumbnail1.jpg" alt="profile">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">Try Not To Laugh Challenge #9</p>
-                    <p class="video-author">Markpilier</p>
-                    <p class="video-stats">19M views · 4 years ago
-
-                    </p>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnail1.jpg" alt="thumbnail1">
+                    <div class="video-time">12:11</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/thumbnail1.jpg" alt="profile">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Try Not To Laugh Challenge #9</p>
+                        <p class="video-author">Markpilier</p>
+                        <p class="video-stats">12M views · 3 months ago
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnail1.jpg" alt="thumbnail1">
+                    <div class="video-time">09:12</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/thumbnail1.jpg" alt="profile">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Try Not To Laugh Challenge #9</p>
+                        <p class="video-author">Markpilier</p>
+                        <p class="video-stats">1.5M views · 5 month ago
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnail1.jpg" alt="thumbnail1">
+                    <div class="video-time">03:23</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/thumbnail1.jpg" alt="profile">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Try Not To Laugh Challenge #9</p>
+                        <p class="video-author">Markpilier</p>
+                        <p class="video-stats">19M views · 4 years ago
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 

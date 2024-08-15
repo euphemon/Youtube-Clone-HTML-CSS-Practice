@@ -49,6 +49,30 @@
     row-gap: 40px;
 }
 
+@media (max-width: 800px) { /*if the screen size is 600 or less*/
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) { /*if the screen size is 1000 or more*/
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/*
+@media (min-width: 751px) and (max-width: 999px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+*/
+
 .video-time {
     background-color: black;
     color: white;
@@ -58,6 +82,6 @@
     font-family: Roboto, Arial;
     font-size: 12px;
     font-weight: 500;
-    padding: 5px 4px 5px 4px;
+    padding: 4px 8px;
     border-radius: 3px;
 }

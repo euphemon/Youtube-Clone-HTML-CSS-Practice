@@ -17,6 +17,10 @@
     z-index: 100;
 }
 
+.header img {
+    cursor: pointer;
+}
+
 .left-section {
     align-items: center;
     display: flex;
@@ -119,9 +123,7 @@
     height: 36px;
     padding-left: 10px;
     font-size: 16px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(170, 165, 165);
+    border: 1px solid rgb(170, 165, 165);
     border-radius: 2px;
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
     width: 0; /*let the search bar shrink*/
