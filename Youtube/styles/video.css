@@ -5,10 +5,10 @@
 
 .video-title {
     margin-top: 0;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 500;
     line-height: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .profile-picture {
@@ -28,13 +28,13 @@
 }
 
 .thumbnail-row {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     position: relative;
 }
 
 .video-author,
 .video-stats {
-    font-size: 12px;
+    font-size: 13px;
     color: #606060;
 }
 
